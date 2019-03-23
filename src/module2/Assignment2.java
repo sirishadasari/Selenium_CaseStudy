@@ -32,7 +32,7 @@ public class Assignment2 {
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		
 		//Script timeout
-		//driver.manage().timeouts().setScriptTimeout(arg1, arg2);
+		driver.manage().timeouts().setScriptTimeout(1, TimeUnit.SECONDS);
 		
 		//Find element Search by name and pass "Selenium"
 	    driver.findElement(By.name("user_v1[query]")).sendKeys("Selenium");
